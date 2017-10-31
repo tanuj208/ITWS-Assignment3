@@ -45,6 +45,7 @@ then
 	for((i=1;i<=$number-1;i++))
 	do
 		read operand
+		#display till 4 decimal digits 
 		divide=`echo "scale=4;($divide/$operand)" | bc -l`
 	done
 	echo $divide
