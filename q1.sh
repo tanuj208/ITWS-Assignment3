@@ -15,6 +15,8 @@ do
 	if [ $number -ne 0 ]
 	then
 		echo "Yes"
+        echo "$number"
+        echo "Arguments =>"
 		man $word | col -b | grep -a1 "^\s*-"
 		#prints only possible arguments 
 		flag=1
@@ -24,6 +26,8 @@ do
 	if [ $number -ne 0 ] 
 	then    
 		echo "Yes"
+		echo "$number"
+        echo "Arguments =>"
 		man $word | col -b | grep -a1 "^\s*-"
 		flag=1
 		break
@@ -32,6 +36,8 @@ do
 	if [ $number -ne 0 ] 
 	then    
 		echo "Yes"
+        echo "$number"
+        echo "Arguments =>"
 		man $word | col -b | grep -a1 "^\s*-"
 		flag=1
 		break
@@ -40,6 +46,8 @@ do
 	if [ $number -ne 0 ] 
 	then    
 		echo "Yes"
+        echo "$number"
+        echo "Arguments =>"
 		man $word | col -b | grep -a1 "^\s*-"
 		$word --help
 		flag=1
