@@ -7,5 +7,5 @@ done
 #deleting multiple spaces and lines and then replacing spaced by lines
 #using uniq -c to count occurrence of each text and then sorting
 #redirecting to q15_ans.txt
-cat temp | tr -s " " | tr -s "\n" | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -nr | awk '{print $2" "$1}' | uniq > q15_ans.txt
+cat temp | tr -d '[:punct:]' | tr -s " " | tr -s "\n" | tr " " "\n" | tr -s "\n" | sort | uniq -c | sort -nr | awk '{print $2" "$1}' | uniq > q15_ans.txt
 rm temp
