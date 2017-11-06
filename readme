@@ -1,5 +1,6 @@
 Q1 : Takes much time if length of word is greater than 6 
 Q2 : commands with different flags are considered same.
 Q8 : for Write format used is <eno><name><esalary> because this is used in examples given
+Q9 : used the same script file as for q8 i.e. program.sh
 Q10 : If exceeds a specific range then it outputs zero	
 Q11 : Assuming inputs are integers
